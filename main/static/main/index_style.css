@@ -1,0 +1,43 @@
+.container_title {
+	font: 600 36px 'Montserrat';
+	margin: 40px 0px 40px 70px;
+}
+
+.container_inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 70px;
+}
+
+.block {
+	flex-basis: 350px;
+}
+
+.block h2 {
+	font: 400 34px 'Montserrat';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+
+.links a {
+	text-decoration: none;
+	font: 300 20px 'Montserrat';
+	color: #000;
+	transition: .2s ease;
+}
+
+.links span {
+	margin-bottom: 25px;
+}
+
+.links a:hover {
+	color: #ff8282;
+	transition: .2s ease;
+}

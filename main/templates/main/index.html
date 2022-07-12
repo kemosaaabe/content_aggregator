@@ -1,0 +1,44 @@
+{% extends 'main/basic.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/index_style.css' %}">
+{% endblock styles %}
+
+{% block content %}
+	<h2 class="container_title">Самые популярные новостные сайты</h2>
+	<div class="container_inner">
+		<div class="block">
+			<h2>риа</h2>
+			<div class="links">
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+			</div>
+		</div>
+		<div class="block">
+			<h2>лента</h2>
+			<div class="links">
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+			</div>
+		</div>
+		<div class="block">
+			<h2>рбк</h2>
+			<div class="links">
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+			</div>
+		</div>
+		<div class="block">
+			<h2>газета</h2>
+			<div class="links">
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+				<span><a href="">link</a></span>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

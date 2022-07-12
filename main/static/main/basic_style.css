@@ -56,3 +56,9 @@ nav ul li {
 	transition: .2s ease;
 }
 
+/* Container */
+
+.container {
+	padding: 0px 120px;
+}
+
