@@ -112,7 +112,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-REDIS_HOST = 'celery'
+REDIS_HOST = 'redis'
 REDIS_PORT = '6379'
 CELERY_BROKER_URL = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
 CELERY_BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}

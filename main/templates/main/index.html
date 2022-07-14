@@ -11,33 +11,49 @@
 		<div class="block">
 			<h2>риа</h2>
 			<div class="links">
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
+				{% if ria_news %}
+					{% for ria_new in ria_news %}
+					<span><a href="">{{ ria_new.content }}</a></span>
+					{% endfor %}
+				{% else %}
+					<span><a href="">Новостей пока что нет...</a></span>
+				{% endif %}
 			</div>
 		</div>
 		<div class="block">
 			<h2>лента</h2>
 			<div class="links">
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
+				{% if lenta_news %}
+					{% for lenta_new in lenta_news %}
+					<span><a href="">{{ lenta_new.content }}</a></span>
+					{% endfor %}
+				{% else %}
+					<span><a href="">Новостей пока что нет...</a></span>
+				{% endif %}
 			</div>
 		</div>
 		<div class="block">
 			<h2>рбк</h2>
 			<div class="links">
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
+				{% if rbc_news %}
+					{% for rbc_new in rbc_news %}
+					<span><a href="">{{ rbc_new.content }}</a></span>
+					{% endfor %}
+				{% else %}
+					<span><a href="">Новостей пока что нет...</a></span>
+				{% endif %}
 			</div>
 		</div>
 		<div class="block">
 			<h2>газета</h2>
 			<div class="links">
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
-				<span><a href="">link</a></span>
+				{% if gazeta_news %}
+					{% for gazeta_new in gazeta_news %}
+					<span><a href="">{{ gazeta_new.content }}</a></span>
+					{% endfor %}
+				{% else %}
+					<span><a href="">Новостей пока что нет...</a></span>
+				{% endif %}
 			</div>
 		</div>
 	</div>
